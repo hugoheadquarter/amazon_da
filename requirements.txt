@@ -1,0 +1,6 @@
+streamlit==1.22.0
+pandas==1.5.3
+numpy==1.23.5
+plotly==5.14.1
+matplotlib==3.7.1
+python-dateutil==2.8.2
