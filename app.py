@@ -164,11 +164,7 @@ def executive_dashboard():
 def product_performance():
     st.title("Product Performance Analysis")
     
-    st.subheader("Top Rated Products")
-    top_rated = filtered_product_df.sort_values('rating', ascending=False).head(10)
-    st.dataframe(top_rated[['title', 'price', 'rating', 'review_count', 'category_name']])
-    
-    st.subheader("Most Reviewed Products")
+    st.subheader("Top Products")
     most_reviewed = filtered_product_df.sort_values('review_count', ascending=False).head(10)
     st.dataframe(most_reviewed[['title', 'price', 'rating', 'review_count', 'category_name']])
     
